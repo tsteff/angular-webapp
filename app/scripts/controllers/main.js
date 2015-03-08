@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularWebappApp.controller:MainCtrl
+ * @name angularWebApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the angularWebappApp
+ * Controller of the angularWebApp
  */
-angular.module('angularWebappApp')
+angular.module('angularWebApp')
   .controller('MainCtrl', function ($scope) {
     $scope.todos = [];
 

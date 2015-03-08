@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularWebappApp.controller:AboutCtrl
+ * @name angularWebApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the angularWebappApp
+ * Controller of the angularWebApp
  */
-angular.module('angularWebappApp')
+angular.module('angularWebApp')
   .controller('AboutCtrl', function ($scope) {
 
   });
