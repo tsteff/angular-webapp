@@ -1,12 +1,15 @@
 'use strict';
 
 angular.module('angularWebApp')
-  .controller('MainCtrl', function ($scope, $http) {
-    $http.get('http://localhost:8080/todos').success(function(data) {
-      debugger;
-      $scope.todos = data;
-    });
+  .controller('MainCtrl', function ($scope, Todo) {
     $scope.todos = [];
+    $scope.todos = Todo.query();
+
+    // can also be done like below if you want to manipulate the data first
+    //Todo.query(function(data) {
+    //  debugger;
+    //  $scope.todos = data;
+    //});
 
     $scope.addTodo = function () {
       $scope.todos.push($scope.todo);

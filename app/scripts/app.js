@@ -8,7 +8,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.sortable'
+    'ui.sortable',
+    'angularWebApp.services'
   ])
   .config(function ($routeProvider) {
     $routeProvider
