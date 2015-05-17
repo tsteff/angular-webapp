@@ -25,15 +25,8 @@
   </form>
   <br/>
 
-  <div ng-repeat="modelTest in todos | filter:query">
-    <div class="panel panel-info">
-      <div class="panel-heading">
-        {{modelTest.title}}
-      </div>
-      <div class="panel-body">
-        {{modelTest.description}}
-      </div>
-    </div>
+  <div ng-repeat="displayTodo in todos | filter:query">
+    <todo-tag todo="displayTodo"/>
   </div>
 
   <p>Total Number: {{todos.length}}</p>
