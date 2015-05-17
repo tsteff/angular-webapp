@@ -1,14 +1,11 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name angularWebApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the angularWebApp
- */
 angular.module('angularWebApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $http) {
+    $http.get('http://localhost:8080/todos').success(function(data) {
+      debugger;
+      $scope.todos = data;
+    });
     $scope.todos = [];
 
     $scope.addTodo = function () {
